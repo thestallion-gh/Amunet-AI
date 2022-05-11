@@ -11,7 +11,7 @@ To run this Code, you would have to pip install the following:
 With all these installed, you are ready to run this!!
 Hope you like this!
 Pls tell me how to improve this code by contributing to this!
-Also, if you like this project, pls follow me..
+Also, if you like this project, pls follow me.
 
 Thanks & Regards
 TechnoBeast-Code
