@@ -1,5 +1,5 @@
 # Amunet
-This is a Working Voice Assistant. Send it your request and ther it answers!
+This is a Working Voice Assistant. Send it your request and there it answers!
 This is coded in python and the GUI software used is TKINTER.
 To run this Code, you would have to pip install the following:
 1.smtplib
