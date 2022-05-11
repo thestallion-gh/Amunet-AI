@@ -3,6 +3,7 @@ import random
 import smtplib
 import sys
 import webbrowser
+import textwrap
 
 import pyttsx3
 import wikipedia
@@ -109,8 +110,13 @@ def query(q):
         z2.config(text=f"Searching wikipedia for {query_n}....")
         speak(f"Searching wikipedia for {query_n}....")
         try:
+            x = ''
             results = wikipedia.summary(query_n, sentences=2)
-            z2.config(text=results)
+            my_wrap = textwrap.TextWrapper(width = 40)
+            wrap_list = my_wrap.wrap(text=results)
+            for line in wrap_list:
+                x = x + f'{line}\n'
+            z2.config(text=x)
             speak(results)
         except Exception as e:
             z2.config(text=query_n + '- page on wikipedia does not exist')
@@ -139,7 +145,7 @@ def query(q):
 
     elif "search" in query.lower():
         search_query = query.split("for")[-1]
-        search_engine = query.split("for")[0].replace("search", "").strip().lower()
+        search_query = search_query.replace('search', '')
         z2.config(text=f'Searching For {search_query}')
         speak(f'Searching For {search_query}')
         search(search_query, 'google')
@@ -198,7 +204,6 @@ def query(q):
         z2.config(text="Sorry sir, i am unable to do that currently")
 
     speak("What else can i help  you with sir?")
-    z2.config(text="What else can i help  you with sir?")
 
 
 h_frame = LabelFrame(root, text="RESPONSE", relief="groove")
