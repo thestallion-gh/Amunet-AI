@@ -7,6 +7,7 @@ To run this Code, you would have to pip install the following:
 3.webbrowser,
 4.pyttsx3,
 5.wikipedia,
+6.CustomTkinter
 
 With all these installed, you are ready to run this!!
 Hope you like this!
@@ -14,6 +15,6 @@ Pls tell me how to improve this code by contributing to this!
 Also, if you like this project, pls follow me.
 
 Thanks & Regards - 
-TechnoBeast-Code
+Valetrix
 
-![rap-removebg](https://user-images.githubusercontent.com/82807201/167844734-07ab5b99-31bd-45c8-a090-c438df6ea416.png)
+![val_logo_transparent](https://user-images.githubusercontent.com/82807201/183481650-f9810c6a-f6dd-4ec5-ae5f-7e9c2d7c55a9.png)
